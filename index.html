@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S.L.Hin Enterprise SDN BHD | Quality Wholesale & Durable Goods</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: '#004aad',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        [lang="en"] .lang-bm { display: none !important; }
+        [lang="bm"] .lang-en { display: none !important; }
+        .lang-btn.active { background: #004aad; color: white; }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-950 font-sans overflow-x-hidden">
+
+    <!-- Header / Navigation -->
+    <header class="sticky top-0 z-50 border-b border-slate-200 bg-white/90 backdrop-blur-xl">
+        <nav class="flex items-center justify-between px-6 py-4 lg:px-12">
+            <!-- Left Side: Language & Logo -->
+            <div class="flex items-center gap-8">
+                <div class="flex items-center gap-1 border-r border-slate-200 pr-6">
+                    <button onclick="setLanguage('en')" id="btn-en" class="lang-btn active px-2.5 py-1 rounded text-[10px] font-black uppercase tracking-wider transition-all hover:bg-slate-100">EN</button>
+                    <button onclick="setLanguage('bm')" id="btn-bm" class="lang-btn px-2.5 py-1 rounded text-[10px] font-black uppercase tracking-wider transition-all hover:bg-slate-100">BM</button>
+                </div>
+
+                <a href="#home" class="flex items-center gap-4 group">
+                    <img src="logo.png" alt="S.L.HIN Logo" class="h-12 w-auto transition-transform group-hover:scale-105">
+                    <div class="leading-tight">
+                        <p class="text-sm font-black tracking-wide sm:text-base text-slate-900">S.L.Hin Enterprise</p>
+                        <p class="text-xs font-medium text-slate-500">SDN BHD</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Right Side: Links & Social Media -->
+            <div class="flex items-center gap-8">
+                <div class="hidden items-center gap-8 text-sm font-semibold text-slate-700 md:flex">
+                    <a href="#branches" class="transition hover:text-brand">
+                        <span class="lang-en">Our branches</span>
+                        <span class="lang-bm">Cawangan Kami</span>
+                    </a>
+                    <a href="#about" class="transition hover:text-brand">
+                        <span class="lang-en">About Us</span>
+                        <span class="lang-bm">Mengenai Kami</span>
+                    </a>
+                    <a href="#contact" class="transition hover:text-brand">
+                        <span class="lang-en">Contact Us</span>
+                        <span class="lang-bm">Hubungi Kami</span>
+                    </a>
+                </div>
+
+                <div class="flex items-center gap-2 md:border-l md:border-slate-200 md:pl-8">
+                    <a href="https://www.facebook.com/p/SLHIN-Enterprise-SDN-BHD-100064874222729/" target="_blank"
+                        class="grid h-10 w-10 place-items-center rounded-full border border-slate-200 bg-white text-slate-700 shadow-sm transition hover:border-brand hover:bg-brand hover:text-white">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/slhin_kelantan?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                        target="_blank"
+                        class="grid h-10 w-10 place-items-center rounded-full border border-slate-200 bg-white text-slate-700 shadow-sm transition hover:border-brand hover:bg-brand hover:text-white">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@s.l.hin_tunjong?is_from_webapp=1&sender_device=pc" target="_blank"
+                        class="grid h-10 w-10 place-items-center rounded-full border border-slate-200 bg-white text-slate-700 shadow-sm transition hover:border-brand hover:bg-brand hover:text-white">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative overflow-hidden">
+        <div class="absolute left-1/2 top-0 h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-brand/10 blur-3xl">
+        </div>
+        <div class="mx-auto grid max-w-7xl items-center gap-12 px-5 py-20 lg:grid-cols-[1.1fr_0.9fr] lg:px-8 lg:py-28">
+            <div data-aos="fade-up" data-aos-duration="1000">
+                <span
+                    class="inline-flex rounded-full border border-brand/20 bg-white px-4 py-2 text-sm font-bold text-brand shadow-sm">
+                    <span class="lang-en">Enterprise solutions with dependable service</span>
+                    <span class="lang-bm">Penyelesaian korporat dengan perkhidmatan yang dipercayai</span>
+                </span>
+                <h1
+                    class="mt-6 max-w-4xl text-4xl font-black tracking-tight text-slate-950 sm:text-5xl lg:text-6xl leading-[1.1]">
+                    <span class="lang-en">Welcome to<br>S.L.Hin Enterprise</span>
+                    <span class="lang-bm">Selamat Datang ke<br>S.L.Hin Enterprise</span>
+                </h1>
+                <p class="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
+                    <span class="lang-en">S.L. Hin Enterprise Sdn. Bhd. was incorporated on 27 June 1996 in Kota Bharu, Kelantan. We are principally engaged in the trading of general consumable foodstuffs and sundry food products.</span>
+                    <span class="lang-bm">S.L. Hin Enterprise Sdn. Bhd. telah diperbadankan pada 27 Jun 1996 di Kota Bharu, Kelantan. Kami terlibat terutamanya dalam perdagangan barangan makanan ruji dan produk makanan rampaian.</span>
+                </p>
+                <div class="mt-8 flex flex-col gap-4 sm:flex-row">
+                    <a href="#contact"
+                        class="inline-flex items-center justify-center gap-2 rounded-full border border-slate-300 bg-white px-8 py-4 text-sm font-bold text-slate-800 shadow-sm transition-all hover:bg-brand hover:text-white hover:border-brand hover:-translate-y-1 hover:shadow-xl">
+                        <span class="lang-en">Contact Us</span>
+                        <span class="lang-bm">Hubungi Kami</span>
+                        <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                    </a>
+                    <a href="#branches"
+                        class="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-8 py-4 text-sm font-bold text-slate-800 shadow-sm transition-all hover:bg-brand hover:text-white hover:border-brand hover:-translate-y-1 hover:shadow-xl">
+                        <span class="lang-en">View Our Branches</span>
+                        <span class="lang-bm">Lihat Cawangan Kami</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="relative" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
+                <div class="rounded-[2.5rem] bg-white p-6 shadow-2xl shadow-slate-200 ring-1 ring-slate-200">
+                    <div class="rounded-[2rem] bg-brand p-10 text-white relative overflow-hidden">
+                        <div class="absolute top-0 right-0 p-8 opacity-10">
+                            <i class="fas fa-building text-9xl"></i>
+                        </div>
+                        <i class="fas fa-building-circle-check text-5xl"></i>
+                        <h2 class="mt-10 text-3xl font-black">S.L.Hin Enterprise</h2>
+                        <p class="mt-4 text-white/80 leading-relaxed text-sm">
+                            <span class="lang-en">Reliable grocery wholesaler offering foodstuffs and sundry goods at competitive prices across multiple branches in Kelantan.</span>
+                            <span class="lang-bm">Pemborong barangan runcit yang boleh dipercayai menawarkan makanan dan barangan rampaian pada harga yang kompetitif di pelbagai cawangan di Kelantan.</span>
+                        </p>
+                        <div class="mt-10 grid gap-4">
+                            <div class="flex items-center gap-4 rounded-2xl bg-white/10 p-4 backdrop-blur-md">
+                                <i class="fas fa-check-circle text-xl"></i>
+                                <span class="font-semibold text-sm">
+                                    <span class="lang-en">Reliable Wholesale Supply</span>
+                                    <span class="lang-bm">Bekalan Borong yang Boleh Dipercayai</span>
+                                </span>
+                            </div>
+                            <div class="flex items-center gap-4 rounded-2xl bg-white/10 p-4 backdrop-blur-md">
+                                <i class="fas fa-check-circle text-xl"></i>
+                                <span class="font-semibold text-sm">
+                                    <span class="lang-en">Helpful customer service</span>
+                                    <span class="lang-bm">Perkhidmatan pelanggan yang membantu</span>
+                                </span>
+                            </div>
+                            <div class="flex items-center gap-4 rounded-2xl bg-white/10 p-4 backdrop-blur-md">
+                                <i class="fas fa-check-circle text-xl"></i>
+                                <span class="font-semibold text-sm">
+                                    <span class="lang-en">Affordable wholesale prices</span>
+                                    <span class="lang-bm">Harga borong yang berpatutan</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Branches Section -->
+    <section id="branches" class="mx-auto max-w-7xl px-5 py-24 lg:px-8">
+        <div class="max-w-2xl" data-aos="fade-right">
+            <p class="text-sm font-black uppercase tracking-[0.25em] text-brand">
+                <span class="lang-en">Our branches</span>
+                <span class="lang-bm">Cawangan Kami</span>
+            </p>
+            <h2 class="mt-4 text-4xl font-black tracking-tight sm:text-5xl">
+                <span class="lang-en">Convenient wholesale access across Kelantan</span>
+                <span class="lang-bm">Akses borong yang mudah di seluruh Kelantan</span>
+            </h2>
+            <p class="mt-6 text-lg text-slate-600">
+                <span class="lang-en">Our branches provide convenient access to foodstuffs and sundry goods, with customer-focused service including assistance with carrying and loading purchased items.</span>
+                <span class="lang-bm">Cawangan kami menyediakan akses yang mudah kepada makanan dan barangan rampaian, dengan perkhidmatan berfokuskan pelanggan termasuk bantuan membawa dan memuatkan barang yang dibeli.</span>
+            </p>
+        </div>
+        <div class="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+            <!-- Tunjong HQ -->
+            <article
+                class="flex flex-col rounded-[2rem] border border-slate-200 bg-white p-7 shadow-sm transition hover:-translate-y-2 hover:shadow-2xl group"
+                data-aos="fade-up" data-aos-delay="100">
+                <a href="https://maps.google.com/maps?vet=10CAAQoqAOahcKEwiYvpLz86yUAxUAAAAAHQAAAAAQEQ..i&sca_esv=8061bd9cb19cd450&udm=1&pvq=Cg0vZy8xMXloeWo1bTA0Ig0KB3MubC5oaW4QAhgD&lqi=CgdzLmwuaGluSISYi9i_vYCACFoQEAAQARgAGAEiBnNsIGhpbpIBDWdyb2Nlcnlfc3RvcmU&fvr=1&cs=0&um=1&ie=UTF-8&fb=1&gl=my&sa=X&ftid=0x31b6a50079f78aab:0x6fe216f290aeda24"
+                    target="_blank"
+                    class="grid h-14 w-14 place-items-center rounded-2xl bg-brand/10 text-brand transition-all hover:bg-brand hover:text-white hover:scale-110">
+                    <i class="fas fa-map-marker-alt text-2xl"></i>
+                </a>
+                <h3 class="mt-6 text-xl font-black">
+                    <span class="lang-en">Tunjong (HQ)</span>
+                    <span class="lang-bm">Tunjong (Ibu Pejabat)</span>
+                </h3>
+                <p class="mt-4 text-sm text-slate-600 leading-relaxed">
+                    PT 1357, Tunjong Auto City, Jalan Lebuh Raya, 130, Kampung Pendek, 15100 Kota Bharu, Kelantan
+                </p>
+                <div class="mt-auto">
+                    <div class="mt-6 flex items-center gap-2 text-xs font-bold text-slate-500 bg-slate-50 p-3 rounded-xl border border-slate-100">
+                        <i class="far fa-clock text-brand/70"></i>
+                        <span>
+                            <span class="lang-en">Sat - Thurs: 8:15am - 6:00pm (Fri Closed)</span>
+                            <span class="lang-bm">Sab - Kha: 8:15am - 6:00pm (Jumaat Tutup)</span>
+                        </span>
+                    </div>
+                    <div class="mt-6">
+                        <a href="https://maps.google.com/maps?vet=10CAAQoqAOahcKEwiYvpLz86yUAxUAAAAAHQAAAAAQEQ..i&sca_esv=8061bd9cb19cd450&udm=1&pvq=Cg0vZy8xMXloeWo1bTA0Ig0KB3MubC5oaW4QAhgD&lqi=CgdzLmwuaGluSISYi9i_vYCACFoQEAAQARgAGAEiBnNsIGhpbpIBDWdyb2Nlcnlfc3RvcmU&fvr=1&cs=0&um=1&ie=UTF-8&fb=1&gl=my&sa=X&ftid=0x31b6a50079f78aab:0x6fe216f290aeda24"
+                            target="_blank"
+                            class="inline-flex items-center gap-2 text-sm font-bold text-brand hover:underline">
+                            <span class="lang-en">View on Maps</span>
+                            <span class="lang-bm">Lihat di Peta</span>
+                            <i class="fas fa-external-link-alt text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Demit -->
+            <article
+                class="flex flex-col rounded-[2rem] border border-slate-200 bg-white p-7 shadow-sm transition hover:-translate-y-2 hover:shadow-2xl group"
+                data-aos="fade-up" data-aos-delay="200">
+                <a href="https://maps.google.com/maps?vet=10CAAQoqAOahcKEwiYvpLz86yUAxUAAAAAHQAAAAAQGg..i&sca_esv=8061bd9cb19cd450&udm=1&pvq=Cg0vZy8xMWZqYnBibWZyIg0KB3MubC5oaW4QAhgD&lqi=CgdzLmwuaGluSLeb1arBrYCACFoQEAAQARgAGAEiBnNsIGhpbpIBCndob2xlc2FsZXI&fvr=1&cs=0&um=1&ie=UTF-8&fb=1&gl=my&sa=X&ftid=0x31b6b104a22ceb25:0xcead1f1e74f97982"
+                    target="_blank"
+                    class="grid h-14 w-14 place-items-center rounded-2xl bg-brand/10 text-brand group-hover:bg-brand group-hover:text-white transition-all hover:scale-110">
+                    <i class="fas fa-map-marker-alt text-2xl"></i>
+                </a>
+                <h3 class="mt-6 text-xl font-black">Demit</h3>
+                <p class="mt-4 text-sm text-slate-600 leading-relaxed">
+                    LOT 1718 & 1719, SEKSYEN, 53, Jalan Guchil Bayam, 15200 Kota Bharu, Kelantan
+                </p>
+                <div class="mt-auto">
+                    <div class="mt-6 flex items-center gap-2 text-xs font-bold text-slate-500 bg-slate-50 p-3 rounded-xl border border-slate-100">
+                        <i class="far fa-clock text-brand/70"></i>
+                        <span>
+                            <span class="lang-en">Sat - Thurs: 9:00am - 5:45pm (Fri Closed)</span>
+                            <span class="lang-bm">Sab - Kha: 9:00am - 5:45pm (Jumaat Tutup)</span>
+                        </span>
+                    </div>
+                    <div class="mt-6">
+                        <a href="https://maps.google.com/maps?vet=10CAAQoqAOahcKEwiYvpLz86yUAxUAAAAAHQAAAAAQGg..i&sca_esv=8061bd9cb19cd450&udm=1&pvq=Cg0vZy8xMWZqYnBibWZyIg0KB3MubC5oaW4QAhgD&lqi=CgdzLmwuaGluSLeb1arBrYCACFoQEAAQARgAGAEiBnNsIGhpbpIBCndob2xlc2FsZXI&fvr=1&cs=0&um=1&ie=UTF-8&fb=1&gl=my&sa=X&ftid=0x31b6b104a22ceb25:0xcead1f1e74f97982"
+                            target="_blank"
+                            class="inline-flex items-center gap-2 text-sm font-bold text-brand hover:underline">
+                            <span class="lang-en">View on Maps</span>
+                            <span class="lang-bm">Lihat di Peta</span>
+                            <i class="fas fa-external-link-alt text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Wakaf Bharu -->
+            <article
+                class="flex flex-col rounded-[2rem] border border-slate-200 bg-white p-7 shadow-sm transition hover:-translate-y-2 hover:shadow-2xl group"
+                data-aos="fade-up" data-aos-delay="300">
+                <a href="https://maps.google.com/maps?vet=10CAAQoqAOahcKEwiYvpLz86yUAxUAAAAAHQAAAAAQIw..i&sca_esv=8061bd9cb19cd450&udm=1&pvq=Cg0vZy8xMWRfYmtkanZuIg0KB3MubC5oaW4QAhgD&lqi=CgdzLmwuaGluSNSG2aj9rICACFoQEAAQARgAGAEiBnNsIGhpbpIBCndob2xlc2FsZXI&fvr=1&cs=0&um=1&ie=UTF-8&fb=1&gl=my&sa=X&ftid=0x31b6afa195094f19:0x3cbcd7be61551db7"
+                    target="_blank"
+                    class="grid h-14 w-14 place-items-center rounded-2xl bg-brand/10 text-brand group-hover:bg-brand group-hover:text-white transition-all hover:scale-110">
+                    <i class="fas fa-map-marker-alt text-2xl"></i>
+                </a>
+                <h3 class="mt-6 text-xl font-black">Wakaf Bharu</h3>
+                <p class="mt-4 text-sm text-slate-600 leading-relaxed">
+                    2470, Jalan Kota Bharu - Pengkalan Kubor, Kampung Dalam Kota, 16210 Tumpat, Kelantan
+                </p>
+                <div class="mt-auto">
+                    <div class="mt-6 flex items-center gap-2 text-xs font-bold text-slate-500 bg-slate-50 p-3 rounded-xl border border-slate-100">
+                        <i class="far fa-clock text-brand/70"></i>
+                        <span>
+                            <span class="lang-en">Sat - Thurs: 8:30am - 5:30pm (Fri Closed)</span>
+                            <span class="lang-bm">Sab - Kha: 8:30am - 5:30pm (Jumaat Tutup)</span>
+                        </span>
+                    </div>
+                    <div class="mt-6">
+                        <a href="https://maps.google.com/maps?vet=10CAAQoqAOahcKEwiYvpLz86yUAxUAAAAAHQAAAAAQIw..i&sca_esv=8061bd9cb19cd450&udm=1&pvq=Cg0vZy8xMWRfYmtkanZuIg0KB3MubC5oaW4QAhgD&lqi=CgdzLmwuaGluSNSG2aj9rICACFoQEAAQARgAGAEiBnNsIGhpbpIBCndob2xlc2FsZXI&fvr=1&cs=0&um=1&ie=UTF-8&fb=1&gl=my&sa=X&ftid=0x31b6afa195094f19:0x3cbcd7be61551db7"
+                            target="_blank"
+                            class="inline-flex items-center gap-2 text-sm font-bold text-brand hover:underline">
+                            <span class="lang-en">View on Maps</span>
+                            <span class="lang-bm">Lihat di Peta</span>
+                            <i class="fas fa-external-link-alt text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Pasir Hor -->
+            <article
+                class="flex flex-col rounded-[2rem] border border-slate-200 bg-white p-7 shadow-sm transition hover:-translate-y-2 hover:shadow-2xl group"
+                data-aos="fade-up" data-aos-delay="400">
+                <a href="https://maps.google.com/maps?vet=10CAAQoqAOahcKEwiYvpLz86yUAxUAAAAAHQAAAAAQKw..i&sca_esv=8061bd9cb19cd450&udm=1&pvq=Cg0vZy8xMWowdGR0cnJrIg0KB3MubC5oaW4QAhgD&lqi=CgdzLmwuaGluSPG9s5aDsICACFoQEAAQARgAGAEiBnNsIGhpbpIBCndob2xlc2FsZXI&fvr=1&cs=0&um=1&ie=UTF-8&fb=1&gl=my&sa=X&ftid=0x31b6bb490126bc89:0x15d2e23088384af3"
+                    target="_blank"
+                    class="grid h-14 w-14 place-items-center rounded-2xl bg-brand/10 text-brand group-hover:bg-brand group-hover:text-white transition-all hover:scale-110">
+                    <i class="fas fa-map-marker-alt text-2xl"></i>
+                </a>
+                <h3 class="mt-6 text-xl font-black">Pasir Hor</h3>
+                <p class="mt-4 text-sm text-slate-600 leading-relaxed">
+                    209, Kampung Tini, 15150 Kota Bharu, Kelantan
+                </p>
+                <div class="mt-auto">
+                    <div class="mt-6 flex items-center gap-2 text-xs font-bold text-slate-500 bg-slate-50 p-3 rounded-xl border border-slate-100">
+                        <i class="far fa-clock text-brand/70"></i>
+                        <span>
+                            <span class="lang-en">Sat - Thurs: 8:30am - 5:30pm (Fri Closed)</span>
+                            <span class="lang-bm">Sab - Kha: 8:30am - 5:30pm (Jumaat Tutup)</span>
+                        </span>
+                    </div>
+                    <div class="mt-6">
+                        <a href="https://maps.google.com/maps?vet=10CAAQoqAOahcKEwiYvpLz86yUAxUAAAAAHQAAAAAQKw..i&sca_esv=8061bd9cb19cd450&udm=1&pvq=Cg0vZy8xMWowdGR0cnJrIg0KB3MubC5oaW4QAhgD&lqi=CgdzLmwuaGluSPG9s5aDsICACFoQEAAQARgAGAEiBnNsIGhpbpIBCndob2xlc2FsZXI&fvr=1&cs=0&um=1&ie=UTF-8&fb=1&gl=my&sa=X&ftid=0x31b6bb490126bc89:0x15d2e23088384af3"
+                            target="_blank"
+                            class="inline-flex items-center gap-2 text-sm font-bold text-brand hover:underline">
+                            <span class="lang-en">View on Maps</span>
+                            <span class="lang-bm">Lihat di Peta</span>
+                            <i class="fas fa-external-link-alt text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="bg-white py-24">
+        <div class="mx-auto grid max-w-7xl gap-16 px-5 lg:grid-cols-2 lg:px-8 items-center">
+            <div data-aos="fade-right">
+                <p class="text-sm font-black uppercase tracking-[0.25em] text-brand">
+                    <span class="lang-en">About Us</span>
+                    <span class="lang-bm">Mengenai Kami</span>
+                </p>
+                <h2 class="mt-4 text-4xl font-black tracking-tight sm:text-5xl leading-tight">
+                    <span class="lang-en">Reliable Wholesale Supply Since 1996</span>
+                    <span class="lang-bm">Bekalan Borong yang Boleh Dipercayai Sejak 1996</span>
+                </h2>
+                <div class="mt-8 space-y-6 text-lg leading-relaxed text-slate-600">
+                    <p>
+                        <span class="lang-en">S. L. Hin Enterprise Sdn. Bhd. is a Kelantan-based grocery wholesaler supplying foodstuffs, sundry goods, and selected directly imported products such as onions, shallots, dried chillies, and garlic. Supported by multiple large warehouses and cold storage facilities, we are committed to maintaining product freshness, stable supply, and competitive pricing for our customers.</span>
+                        <span class="lang-bm">S. L. Hin Enterprise Sdn. Bhd. merupakan pemborong barangan runcit yang berpangkalan di Kelantan, membekalkan makanan, barangan rampaian, dan produk terpilih yang diimport terus seperti bawang besar, bawang merah, cili kering, dan bawang putih. Dengan sokongan pelbagai gudang besar dan kemudahan penyimpanan sejuk, kami komited untuk mengekalkan kesegaran produk, bekalan yang stabil, dan harga yang kompetitif untuk pelanggan kami.</span>
+                    </p>
+                </div>
+            </div>
+            <div class="relative" data-aos="fade-left">
+                <div class="aspect-square rounded-[3rem] bg-slate-100 overflow-hidden relative">
+                    <img src="about_us.jpg"
+                        alt="Warehouse"
+                        class="object-cover w-full h-full opacity-90 group-hover:scale-105 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-brand/10 mix-blend-multiply"></div>
+                </div>
+                <div
+                    class="absolute -bottom-8 -left-8 bg-white p-8 rounded-[2rem] shadow-2xl max-w-xs border border-slate-100">
+                    <p class="text-5xl font-black text-brand">30+</p>
+                    <p class="mt-2 font-bold text-slate-800">
+                        <span class="lang-en">Years of excellence in the industry</span>
+                        <span class="lang-bm">Tahun kecemerlangan dalam industri</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="mx-auto max-w-7xl px-5 py-24 lg:px-8">
+        <div class="rounded-[3rem] bg-slate-950 p-10 text-white lg:p-16 relative overflow-hidden" data-aos="zoom-in-up">
+            <div class="absolute top-0 right-0 w-1/2 h-full bg-brand/10 blur-[120px] pointer-events-none"></div>
+            <div class="grid gap-16 lg:grid-cols-[1fr_1.2fr]">
+                <div>
+                    <p class="text-sm font-black uppercase tracking-[0.25em] text-white/60">
+                        <span class="lang-en">Contact Us</span>
+                        <span class="lang-bm">Hubungi Kami</span>
+                    </p>
+                    <h2 class="mt-4 text-4xl font-black tracking-tight sm:text-5xl">
+                        <span class="lang-en">Let’s connect.</span>
+                        <span class="lang-bm">Mari berhubung.</span>
+                    </h2>
+                    <p class="mt-6 text-xl text-white/70 leading-relaxed">
+                        <span class="lang-en">Please feel free to contact us. We will get back to you as soon as possible.</span>
+                        <span class="lang-bm">Sila hubungi kami. Kami akan membalas secepat mungkin.</span>
+                    </p>
+
+                    <div class="mt-12 space-y-6">
+                        <a href="tel:+6097648311" class="flex items-center gap-6 group">
+                            <div
+                                class="h-14 w-14 rounded-2xl bg-white/10 flex items-center justify-center transition group-hover:bg-brand group-hover:scale-110">
+                                <i class="fas fa-phone-alt text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm font-bold text-white/50 uppercase tracking-wider">
+                                    <span class="lang-en">Phone</span>
+                                    <span class="lang-bm">Telefon</span>
+                                </p>
+                                <p class="text-lg font-bold">+60 9-764 8311</p>
+                            </div>
+                        </a>
+                        <a href="mailto:slhindemit99@gmail.com" class="flex items-center gap-6 group">
+                            <div
+                                class="h-14 w-14 rounded-2xl bg-white/10 flex items-center justify-center transition group-hover:bg-brand group-hover:scale-110">
+                                <i class="fas fa-envelope text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm font-bold text-white/50 uppercase tracking-wider">
+                                    <span class="lang-en">Email</span>
+                                    <span class="lang-bm">Emel</span>
+                                </p>
+                                <p class="text-lg font-bold">slhindemit99@gmail.com</p>
+                            </div>
+                        </a>
+                        <a href="https://maps.google.com/maps?vet=10CAAQoqAOahcKEwiYvpLz86yUAxUAAAAAHQAAAAAQEQ..i&sca_esv=8061bd9cb19cd450&udm=1&pvq=Cg0vZy8xMXloeWo1bTA0Ig0KB3MubC5oaW4QAhgD&lqi=CgdzLmwuaGluSISYi9i_vYCACFoQEAAQARgAGAEiBnNsIGhpbpIBDWdyb2Nlcnlfc3RvcmU&fvr=1&cs=0&um=1&ie=UTF-8&fb=1&gl=my&sa=X&ftid=0x31b6a50079f78aab:0x6fe216f290aeda24" target="_blank" class="flex items-center gap-6 group">
+                            <div class="h-14 w-14 rounded-2xl bg-white/10 flex items-center justify-center transition group-hover:bg-brand group-hover:scale-110">
+                                <i class="fas fa-location-dot text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm font-bold text-white/50 uppercase tracking-wider">
+                                    <span class="lang-en">Head Office</span>
+                                    <span class="lang-bm">Pejabat Utama</span>
+                                </p>
+                                <p class="text-lg font-bold leading-tight">S. L. Hin Enterprise Sdn. Bhd. (Tunjong)</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <form class="bg-white/5 p-8 rounded-[2rem] backdrop-blur-sm border border-white/10">
+                    <div class="space-y-2">
+                        <label class="text-sm font-bold text-white/80">
+                            <span class="lang-en">Full Name</span>
+                            <span class="lang-bm">Nama Penuh</span>
+                        </label>
+                        <input type="text" id="form-name" placeholder="Your Name"
+                            class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 focus:outline-none focus:border-brand transition">
+                    </div>
+                    <div class="mt-6 space-y-2">
+                        <label class="text-sm font-bold text-white/80">
+                            <span class="lang-en">Subject</span>
+                            <span class="lang-bm">Subjek</span>
+                        </label>
+                        <input type="text" id="form-subject" placeholder="Subject of your message"
+                            class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 focus:outline-none focus:border-brand transition">
+                    </div>
+                    <div class="mt-6 space-y-2">
+                        <label class="text-sm font-bold text-white/80">
+                            <span class="lang-en">Message</span>
+                            <span class="lang-bm">Mesej</span>
+                        </label>
+                        <textarea id="form-message" rows="4" placeholder="How can we help you?"
+                            class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 focus:outline-none focus:border-brand transition"></textarea>
+                    </div>
+                    <button type="submit"
+                        class="mt-8 w-full bg-brand py-4 rounded-xl font-bold text-lg shadow-lg shadow-brand/20 hover:bg-blue-700 transition">
+                        <span class="lang-en">Send Message</span>
+                        <span class="lang-bm">Hantar Mesej</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-200 bg-white px-5 py-12 lg:px-8">
+        <div class="mx-auto max-w-7xl">
+            <div class="flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
+                <div class="flex items-center gap-4">
+                    <img src="logo.png" alt="S.L.HIN Logo" class="h-12 w-auto">
+                    <div>
+                        <p class="text-base font-black tracking-tight text-slate-900">S.L.Hin Enterprise SDN BHD</p>
+                        <p class="text-xs font-medium text-slate-500">
+                            <span class="lang-en">Excellence in Wholesaling since 1996</span>
+                            <span class="lang-bm">Kecemerlangan dalam Pemborongan sejak 1996</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex gap-8 text-sm font-semibold">
+                    <a href="#branches" class="text-slate-600 hover:text-brand transition">
+                        <span class="lang-en">Our branches</span>
+                        <span class="lang-bm">Cawangan Kami</span>
+                    </a>
+                    <a href="#about" class="text-slate-600 hover:text-brand transition">
+                        <span class="lang-en">About Us</span>
+                        <span class="lang-bm">Mengenai Kami</span>
+                    </a>
+                    <a href="#contact" class="text-slate-600 hover:text-brand transition">
+                        <span class="lang-en">Contact Us</span>
+                        <span class="lang-bm">Hubungi Kami</span>
+                    </a>
+                </div>
+
+                <div class="flex items-center gap-4">
+                    <a href="https://www.facebook.com/p/SLHIN-Enterprise-SDN-BHD-100064874222729/" target="_blank"
+                        class="text-slate-400 hover:text-brand transition text-xl"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/slhin_kelantan?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                        target="_blank" class="text-slate-400 hover:text-brand transition text-xl"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@s.l.hin_tunjong?is_from_webapp=1&sender_device=pc" target="_blank"
+                        class="text-slate-400 hover:text-brand transition text-xl"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div
+                class="mt-12 pt-8 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-medium text-slate-400">
+                <p>© 2026 S.L.Hin Enterprise SDN BHD (199601019692). All rights reserved.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="hover:text-slate-600">
+                        <span class="lang-en">Privacy Policy</span>
+                        <span class="lang-bm">Dasar Privasi</span>
+                    </a>
+                    <a href="#" class="hover:text-slate-600">
+                        <span class="lang-en">Terms of Service</span>
+                        <span class="lang-bm">Terma Perkhidmatan</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function setLanguage(lang) {
+            document.documentElement.setAttribute('lang', lang);
+            document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+            const activeBtn = document.getElementById('btn-' + lang);
+            if (activeBtn) activeBtn.classList.add('active');
+            localStorage.setItem('preferredLang', lang);
+
+            // Update Form Placeholders
+            const translations = {
+                en: {
+                    name: "Your Name",
+                    subject: "Subject of your message",
+                    message: "How can we help you?"
+                },
+                bm: {
+                    name: "Nama Anda",
+                    subject: "Subjek mesej anda",
+                    message: "Bagaimana kami boleh membantu anda?"
+                }
+            };
+
+            const t = translations[lang];
+            const nameInput = document.getElementById('form-name');
+            const subjectInput = document.getElementById('form-subject');
+            const msgInput = document.getElementById('form-message');
+
+            if (nameInput) nameInput.placeholder = t.name;
+            if (subjectInput) subjectInput.placeholder = t.subject;
+            if (msgInput) msgInput.placeholder = t.message;
+        }
+
+        // Initialize Language
+        const savedLang = localStorage.getItem('preferredLang') || 'en';
+        setLanguage(savedLang);
+
+        // Initialize AOS
+        AOS.init({
+            once: true,
+            offset: 100,
+        });
+
+        // Form Submission Handler
+        document.querySelector('form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            const name = document.getElementById('form-name').value || '';
+            const subject = document.getElementById('form-subject').value || '';
+            const message = document.getElementById('form-message').value || '';
+
+            const bodyText = `Hi, this is from ${name}.\n\n${message}`;
+            
+            const mailtoLink = `mailto:slhindemit99@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyText)}`;
+            
+            window.location.href = mailtoLink;
+        });
+    </script>
+</body>
+
+</html>
